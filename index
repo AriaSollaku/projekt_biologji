@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESTORANT AROMA</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>Restorant Aroma </h1>
+    <p>Restorant me ushqimet tradicionale shqiptare </p>
+  </div>
+</header>
+
+<nav>
+  <a href="#about"> Rreth Restorantit </a>
+  <a href="#menu"> Menu </a>
+  <a href="#gallery"> Galeria </a>
+   <a href="#faq" >FAQ </a>
+  <a href="#contact"> Kontakti </a>
+</nav>
+
+<section id="about" class="container">
+  <div class="about">
+    <h2>Rreth Restorantit</h2>
+
+    <p>
+      Restorant Aroma është një restorant në Tiranë i njohur për gatimet tradicionale shqiptare, veçanërisht specialitetet e zgarrës. 
+      Ambienti është i ngrohtë dhe familjar, i përshtatshëm si për dreka ashtu edhe për darka me miq ose familje. 
+      Në menu gjenden mishra në zgarrë, gatime mesdhetare si dhe opsione tradicionale shqiptare. 
+      Qëllimi ynë eshte t'u ofrojmë klientëve cilësi të lartë, shërbim të shkëlqyer ku cdo vakt të kthehet në një përvojë të vecantë.
+    </p>
+    
+  <br>
+  </div>
+  </section>
+
+<section id="menu" class="container">
+ <section id="menu">
+    <h2>Menu Tradicionale Shqiptare</h2>
+
+    <h3>Meze & Sallata</h3>
+    <table>
+        <tr>
+            <th>Gatimi</th>
+            <th>Çmimi</th>
+        </tr>
+        <tr>
+            <td>Djathë i Bardhë Fshati</td>
+            <td>450 ALL</td>
+        </tr>
+        <tr>
+            <td>Gjizë me Speca</td>
+            <td>500 ALL</td>
+        </tr>
+        <tr>
+            <td>Sallatë Fshati</td>
+            <td>500 ALL</td>
+        </tr>
+    </table>
+
+    <h3>Gatime Tradicionale</h3>
+    <table>
+        <tr>
+            <th>Gatimi</th>
+            <th>Çmimi</th>
+        </tr>
+        <tr>
+            <td>Tavë Kosi</td>
+            <td>900 ALL</td>
+        </tr>
+        <tr>
+            <td>Fërgesë Tirane</td>
+            <td>850 ALL</td>
+        </tr>
+        <tr>
+            <td>Mish Qengji në Furrë</td>
+            <td>1500 ALL</td>
+        </tr>
+    </table>
+</section>
+
+</section>
+
+<section id="gallery" class="container">
+  <h2>Galeria</h2>
+
+  <div class="gallery">
+
+    <img src="https://www.tripadvisor.com/LocationPhotoDirectLink-g801294-i669372893-Tepelene_Gjirokaster_County.html">
+
+    <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=800&q=80">
+
+    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80">
+
+  </div>
+</section>
+
+<section class="container tickets">
+  <h2>Rezervo tavolinën tënde 🎟️</h2>
+
+  <p>Rezervo tavolinën tënde në restorantin më popullor të Tiranës!</p>
+
+  <button onclick="showPopup()">
+    Rezervo tavolinën tënde në orarin që dëshiron
+  </button>
+</section>
+
+<div class="popup" id="popup">
+
+  <div class="popup-content">
+
+    <h2>Rezervim Tavoline 🎫</h2>
+
+    <form id="ticketForm">
+
+      <input 
+        type="text" 
+        placeholder="Shkruaj emrin"
+        required
+      >
+
+      <input 
+        type="email" 
+        placeholder="Shkruaj email-in"
+        required
+      >
+
+      <button type="submit">
+        Konfirmo Rezervimin
+      </button>
+
+    </form>
+
+    <br>
+
+    <button onclick="closePopup()">
+      Mbyll
+    </button>
+
+  </div>
+
+</div>
+
+<section id="faq" class="container">
+
+  <h2>Pyetje të Shpeshta ❓</h2>
+
+  <div class="about">
+
+    <h3>🎟️ Si mund të rezervoj?</h3>
+    <p>
+      Klikoni te butoni "Rezervo" dhe plotësoni të dhënat tuaja.
+    </p>
+
+    <br><hr><br>
+
+    <h3>👨‍👩‍👧 A pranoni pagesa me kartë?</h3>
+    <p>
+      Po, pranojmë dhe pagesa me kartë.
+    </p>
+
+    <br><hr><br>
+
+    <h3>🚗 A ka parking?</h3>
+    <p>
+      Po, kemi vende të rezervuara për parkim falas për klientët tanë.
+    </p>
+
+    <br><hr><br>
+
+    <h3>⏰ Orari i restorantit?</h3>
+    <p>
+      Restoranti fillon shërbimin në orën 12:30.
+    </p>
+
+  </div>
+
+</section>
+
+<footer id="contact">
+
+  <p>📍 Rruga e Durrësit
+    Përballë gjimnazit "Qemal Stafa"
+    Tiranë, Shqipëri</p>
+
+  <p>📞 +355 69 123 4567</p>
+
+  <p>✉️ restorant.aroma@gmail.com</p>
+
+  <br>
+
+  <p>© 2026 Restorant Aroma. Të gjitha të drejtat e rezervuara.  </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
